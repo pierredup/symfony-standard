@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "64b5a56a7a23ad3473d959ff436ddd21",
+    "content-hash": "2430a7b93aa33651ca9641da6eb7a114",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1869,16 +1869,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "dev-master",
+            "version": "dev-forms-testing",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/symfony.git",
-                "reference": "28a00dac0c396f2880b84bc33d7abae698d4d94a"
+                "url": "https://github.com/pierredup/symfony.git",
+                "reference": "3fbe584b7b5dfae8c0c8f4ca6a09e50c13b8a384"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/28a00dac0c396f2880b84bc33d7abae698d4d94a",
-                "reference": "28a00dac0c396f2880b84bc33d7abae698d4d94a",
+                "url": "https://api.github.com/repos/pierredup/symfony/zipball/3fbe584b7b5dfae8c0c8f4ca6a09e50c13b8a384",
+                "reference": "3fbe584b7b5dfae8c0c8f4ca6a09e50c13b8a384",
                 "shasum": ""
             },
             "require": {
@@ -1996,7 +1996,11 @@
                     "**/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "files": [
+                    "src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -2015,7 +2019,10 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2017-03-01 06:52:11"
+            "support": {
+                "source": "https://github.com/pierredup/symfony/tree/forms-testing"
+            },
+            "time": "2017-03-10 12:17:58"
         },
         {
             "name": "twig/twig",
@@ -2193,7 +2200,14 @@
             "time": "2017-01-21T17:06:35+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "3.3.x-dev",
+            "alias_normalized": "3.3.9999999.9999999-dev",
+            "version": "dev-forms-testing",
+            "package": "symfony/symfony"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "symfony/symfony": 20
